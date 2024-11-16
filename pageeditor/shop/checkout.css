@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*header css*/
+header{
+    position: relative;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+
+.header-wrapper{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+header .logo img {
+    width: 50px; 
+    height: auto;
+    border-radius: 50px;
+}
+
+
+header .navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+header .navigation a:not(:last-child) {
+    margin-right: 30px;
+}
+
+header .navigation a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/*checkout form css*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #008000;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    
+}
+
+.container form{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 40px 10px 40px;
+    background: #FFFFFF;
+    border-radius:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-section{
+    flex: 1 1 30%;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;    
+}
+
+.flex-row{
+    display: flex;
+    gap: 20px;
+}
+
+.form-section:last-child{
+    margin-right: 0;
+}
+
+
+.title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 3% 0 3% 0;
+}
+
+.input-box{
+    margin-bottom: 15px ;
+    flex: 1;
+}
+
+.input-box span{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-box input,.input-box select{
+    width: 100%;
+    padding: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.input-box input[type="number"]::-webkit-outer-spin-button,
+.input-box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.image{
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.thankyou-image{
+    width : 320px;
+}
+
+.pay-btn {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.pay-btn:hover {
+    background-color: #00cc44;
+}
+
+
+/*footer css*/
+footer {
+    background: darkslategray;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.footer-content1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content2 {
+    margin: 10px;
+}
+
+.footer-content2 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content2 a:hover {
+    color: rgb(54, 218, 32);
+}
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+footer .footer-content p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials li {
+    margin: 0 10px;
+}
+
+footer .socials li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .socials li a:hover {
+    color: gold
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+
+.footer-contentlinks a {
+    color: #fff;
+}
+
+.name a {
+    color: #fff;
+}
+
+footer sub {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
