@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+		"Times New Roman", Times, serif;
+}
+
+body {
+	background: linear-gradient(
+		0deg,
+		rgba(247, 247, 247, 1) 0%,
+		rgba(89, 186, 129, 1) 100%
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.team-container {
+	height: 100vh;
+}
+
+.head-box {
+	margin-top: 100px;
+	/* margin-bottom: 50px; */
+}
+.heading {
+	font-size: 60px;
+	color: rgba(0, 0, 0, 0.841);
+}
+
+.heading span {
+	font-style: italic;
+}
+
+h1 {
+	text-align: center;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-block: 100px;
+}
+
+.profiles {
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.profile-card {
+	height: 280px;
+	width: 280px;
+	position: relative;
+	background: #dcfffc7a;
+	padding: 30px;
+	border-radius: 50%;
+	box-shadow: 0 0 22px #3336;
+	transition: 0.6s;
+	margin: 0 25px;
+	cursor: pointer;
+}
+
+.profile-card:hover {
+	border-radius: 10px;
+	height: 450px;
+}
+
+.profile-card img {
+	position: relative;
+	width: 220px;
+	height: 220px;
+	transition: 0.4s;
+}
+
+.profile-card:hover img {
+	filter: grayscale(0);
+	transform: translateY(-100px);
+}
+
+.img img {
+	height: 220px;
+	width: 220px;
+	border-radius: 100%;
+	box-shadow: 0 0 22px #3336;
+	transition: 0.4s;
+}
+
+.profile-card:hover img {
+	border-radius: 10px;
+}
+
+.caption {
+	text-align: center;
+	transform: translateY(-60px);
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.profile-card:hover .caption {
+	opacity: 1;
+}
+
+.caption p {
+	font-size: 20px;
+	color: rgb(15, 45, 15);
+	text-align: justify;
+}
+
+.caption h3 {
+	font-size: 22px;
+}
+
+.caption .detail-list {
+	text-align: left;
+}
+
+@media only screen and (max-width: 1200px) {
+	.profiles {
+		padding-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.profile-card {
+		margin: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.profile-card img {
+		width: 220px;
+		height: 220x;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.profile-card:hover {
+		height: 450px;
+	}
+
+	.caption p {
+		font-size: 18px;
+	}
+
+	.caption h3 {
+		font-size: 28px;
+	}
+}

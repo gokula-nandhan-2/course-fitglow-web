@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+   
+    overflow: hidden;
+}
+
+#backvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 20px;
+    color: #fff; 
+    overflow-y: auto;
+}
+
+.heading h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    background-color: #333;
+}
+
+.heading{
+    border-radius: 20px;
+}
+
+.center {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+    color: #333;
+    margin-top: 20px; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%; 
+}
+
+.shealth img {
+    width: 100%; 
+    height: auto;
+    border-radius: 20px;
+    max-width: 100%; 
+}
+
+.shealth p {
+    text-align: justify;
+    margin-top: 20px;
+    max-width: 100%; 
+}
+
+.gallery {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 750px;
+    gap: 20px;
+    overflow: hidden; 
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.gallery img:hover {
+    filter: brightness(1.2);
+    transform: scale(0.95) rotate(-10deg);
+}
+

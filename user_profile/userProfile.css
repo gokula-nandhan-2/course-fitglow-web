@@ -1,0 +1,256 @@
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: radial-gradient(
+		circle,
+		rgba(178, 223, 166, 1) 0%,
+		rgba(75, 131, 96, 1) 100%
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+.user-profile h1 {
+	font-family: "Mochiy Pop One", sans-serif;
+	font-size: 40px;
+	text-align: center;
+	line-height: 2;
+	color: rgb(6, 26, 9);
+	margin: 20px;
+}
+
+.user-profile {
+	width: 100vw;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+.progress {
+	background-color: rgb(18, 107, 39);
+	border-radius: 20px;
+	width: 0%;
+	margin-top: 60px;
+	display: none;
+}
+
+.progress-done {
+	width: 0%;
+	height: 25px;
+	margin: 20px 0;
+	background-color: #065622;
+	border-radius: 10px;
+	color: #c5e1d4;
+}
+
+#progress-text {
+	font-size: 15px;
+	padding: 10px;
+}
+
+.prompt-container {
+	background: linear-gradient(
+		0deg,
+		rgba(247, 247, 247, 1) 0%,
+		rgba(110, 199, 148, 1) 100%
+	);
+	padding: 20px;
+	width: 40%;
+	border-radius: 10px;
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	display: none;
+	z-index: 10;
+}
+
+#question-counter {
+	font-size: 20px;
+	color: black;
+	margin: 15px;
+}
+
+.line-box {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#prompt-title {
+	font-size: 22px;
+	color: black;
+	margin: 15px;
+}
+
+#prompt-heading {
+	text-align: center;
+	font-size: 28px;
+	color: black;
+	margin: 15px;
+}
+
+#prompt-label {
+	font-size: 22px;
+}
+
+#close-btn {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: rgb(225, 219, 219);
+	border: #071e0d;
+}
+
+#close-btn:hover {
+	background: transparent;
+	border: 1px solid black;
+	border-width: 2px;
+}
+
+.prompt-input {
+	background-color: whitesmoke;
+	padding: 40px;
+	margin-block: 30px 60px;
+	width: 100%;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #071e0d;
+	border-width: 2px;
+}
+
+.prompt-input input {
+	border: none;
+	width: 100%;
+	font-size: 22px;
+	margin: 3px;
+	padding: 3px;
+}
+
+.prompt-container button {
+	border: none;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 10px;
+	background-color: #0b2712;
+	color: white;
+	cursor: pointer;
+}
+
+.prompt-container button:hover {
+	background: transparent;
+	border: 1px solid rgb(0, 0, 0);
+	color: black;
+}
+
+#next-btn {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#submit-btn {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#prev-step-btn {
+	position: absolute;
+	right: 20px;
+	bottom: 68px;
+}
+#prev-ques-btn {
+	position: absolute;
+	bottom: 68px;
+}
+
+.prompt-input input {
+	border: none;
+	border-radius: 3px;
+	border-bottom: solid black 2px;
+	width: 100%;
+	margin: 8px;
+	font-size: 20px;
+}
+
+.add-button {
+	color: #fff;
+	background-color: #0a5b39;
+	border: 1px solid #065622;
+	border-radius: 20px;
+	padding-block: 10px;
+	padding-inline: 30px;
+	font-size: 30px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+
+.add-button:hover {
+	background: transparent;
+	border: 1px solid white;
+	transform: translateX(8px);
+}
+
+.overlay {
+	background-color: #071e0d;
+	opacity: 0.7;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.prog-text {
+	position: relative;
+	left: 10px;
+	top: 6px;
+}
+
+#output-container {
+	padding: 30px;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.output-box {
+	border-radius: 10px;
+	background-color: white;
+	color: #093c24;
+	padding: 16px;
+	display: block;
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+	line-height: 3;
+	font-size: 20px;
+	margin: 40px;
+}
+
+.output-box:hover {
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+#close-btn {
+	display: block;
+}
+

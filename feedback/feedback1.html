@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGlow</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="FitGlow.png" >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('89125.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;}
+        h1 {
+            text-align: center;
+            padding: 10px;
+            color: rgb(141, 14, 79);
+        }
+        form, #previewSection {
+            width: 600px;
+            margin: 10px auto;
+            padding: 30px;
+            border: 2px solid #342626;
+            border-radius: 15px;
+           background-image: url('75.webp');
+        }
+        #feedbackForm{
+            display: block;
+        }
+        #previewSection{
+            padding: 2rem;
+            display: none;
+        }
+        #previewSection p, #previewSection h2 {
+            padding-bottom:1rem ;
+        }
+        #previewSection span{
+            color: rgb(61, 58, 58);
+        }
+        label {
+            display:block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input[type="radio"], input[type="number"] {
+            margin-right: 10px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .radio-group label {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 25px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #d33bc4;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #9d1196;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2><a href="homepage.html" class="logo"><img src="FitGlow.png" alt="FitGlow Logo" style="width: 120px; height: auto;"></a></h2>
+
+        <div class="navigation">
+            <a href="homepage.html" >Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="userProfile.html">User Profile</a>
+            <a href="feedback1.html" class="active">Feedback</a>
+            <a href="Sitemap.html">Sitemap</a>
+            <a href="team.html">Team</a>
+        </div>
+    </header>
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" >
+        <span id="nameError" class="error"></span>
+        
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" >
+        <span id="emailError" class="error"></span>
+        
+        <label>Was this your first time visiting?</label>
+        <div class="radio-group">
+            <input type="radio" id="firstVisitYes" name="firstVisit" value="Yes" >
+            <label for="firstVisitYes">Yes</label>
+            <input type="radio" id="firstVisitNo" name="firstVisit" value="No" >
+            <label for="firstVisitNo">No</label>
+        </div>
+        <span id="firstVisitError" class="error"></span>
+        
+        <label>Was this website informative and easy to navigate through?</label>
+        <div class="radio-group">
+            <input type="radio" id="informativeYes" name="informative" value="Yes" >
+            <label for="informativeYes">Yes</label>
+            <input type="radio" id="informativeNo" name="informative" value="No" >
+            <label for="informativeNo">No</label>
+        </div>
+        <span id="informativeError" class="error"></span>
+        
+        <label>If "No", suggest any improvements for the future:</label>
+        <textarea id="improvements" name="improvements"></textarea>
+        
+        <label>How satisfied are you with our services? Choose from 1 to 10, with 1 being "Not satisfied at all" and 10 being "Extremely satisfied":</label>
+        <input type="number" id="rating" name="rating" min="1" max="10" >
+        <span id="ratingError" class="error"></span>
+        
+        <label>Would you recommend our services?</label>
+        <div class="radio-group">
+            <input type="radio" id="recommendYes" name="recommend" value="Yes" >
+            <label for="recommendYes">Yes</label>
+            <input type="radio" id="recommendNo" name="recommend" value="No" >
+            <label for="recommendNo">No</label>
+        </div>
+        <span id="recommendError" class="error"></span>
+        
+        <label>Would you like to receive updates about the website and any offers?</label>
+        <select id="updates" name="updates">
+            <option value="Yes - via Email">Yes - via Email</option>
+            <option value="No">No</option>
+        </select>
+        
+        <label>Do you have any additional questions or requests?</label>
+        <textarea id="questions" name="questions"></textarea>
+        
+        <button type="submit" id="preview">Submit</button>
+    </form>
+    
+    <div id="previewSection">
+        <h2>Preview Your Feedback</h2>
+        <p><strong>Name:</strong> <span id="previewName"></span></p>
+        <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+        <p><strong>First Time Visiting:</strong> <span id="previewFirstVisit"></span></p>
+        <p><strong>Informative and Easy to Navigate:</strong> <span id="previewInformative"></span></p>
+        <p><strong>Improvements:</strong> <span id="previewImprovements"></span></p>
+        <p><strong>Satisfaction Rating:</strong> <span id="previewRating"></span></p>
+        <p><strong>Recommend Services:</strong> <span id="previewRecommend"></span></p>
+        <p><strong>Additional Questions:</strong> <span id="previewQuestions"></span></p>
+        <button id="edit">Edit</button>
+        <button id="submit">Confirm and Submit</button>
+    </div>
+    <footer>
+        <div class="footer-content1">
+          <div class="footer-content2">
+            <div class="name">
+            <h3> About Us:</h3> <br>
+            <a href="pageeditor.html" target="_blank">Gokula Nandhan </a><br>
+            <a href="pageEditor_Thilaksha.html" target="_blank">Thilaksha Lakshan</a><br>
+            <a href="pageEditor_thiba.html" target="_blank">Thibakar</a><br>
+            <a href="pageEditor_thenu.html" target="_blank">Thenujaa</a><br>
+            </div>
+           </div>
+           <div class="footer-content2">
+            <div class="footer-content">
+                <h3>FitGlow</h3>
+                <p>WE Love Being Healthy!</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/theglobalgoals"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/TheGlobalGoals"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/TheGlobalGoals/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCRfuAYy7MesZmgOi1Ezy0ng"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitGlow. All rights reserved.</p>
+            </div>
+           </div>
+           <div class="footer-content2">
+            <div class="footer-contentlinks">
+            <a href="https://www.globalgoals.org/terms-conditions/" >Terms & Conditions</a><br>
+            <a href="https://www.globalgoals.org/privacy-policy/" >Privacy Policy</a><br>
+            <a href="https://www.globalgoals.org/cookies/">Cookies</a><br>
+            <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a><br>
+            <a href="https://www.globalgoals.org/asset-licence/">Asset Licence</a>
+           </div>
+          </div>   
+        </div>
+      </footer>
+    
+    
+      <script src="script.js"></script>
+    </body>
+    </html>

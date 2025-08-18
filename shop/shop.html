@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/FitGlow.png" >
+    <link rel="stylesheet" href="shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Shop</title>    
+</head>
+<body>
+    
+    <section>
+        <header>
+            <div class="header-wrapper">
+                <h2><a href="#" class="logo"><img src="images/FitGlow.png" alt="FitGlow Logo"></a></h2>
+                <div class="navigation">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Shop</a>
+                    <a href="#">User Profile</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Team</a>
+                    <a href="#" id="basket-icon"><i class='bx bx-basket'></i></a>
+                </div>
+            </div>
+        </header> 
+            
+            <div class="basket">
+                <h2 class="basket-title">BASKET</h2>    
+                <div class="basket-content"></div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">LKR 0.00</div>
+                </div>
+                <button type="button" id="checkout-button" class="checkout">Checkout</button>
+                <i class="bx bx-x" id="close-basket"></i>
+            </div>   
+    </section>
+
+
+    <section class="firstBackground">
+        <div class="overlay"></div>
+        <div class="text">
+            <h4>Every</h4>
+            <h1>Purchase</h1>
+            <h4>of yours</h4>
+            <h4>is a poor man's</h4>
+            <h3>one-time</h3>
+            <h2>healthy meal.</h2>
+        </div>
+    </section>
+
+    <section id="feature" class="service">
+        <div class="features">
+            <img src="images/icon1.jpg" alt="onlinePayment" class="feature-icon">
+            <h6>Online Payment</h6>
+        </div>
+
+        <div class="features">
+            <img src="images/icon2.jpg" alt="freeDelivery" class="feature-icon">
+            <h6>Free Delivery</h6>
+        </div>
+
+        <div class="features">
+            <img src="images/icon3.jpg" alt="healthRelated" class="feature-icon">
+            <h6>Health Related</h6>
+        </div>
+
+        <div class="features">
+            <img src="images/icon4.jpg" alt="buyer protection" class="feature-icon">
+            <h6>Buyer Protection</h6>
+        </div>
+    </section>
+
+    <section id="product">
+        <h2>FEATURED PRODUCTS</h2>
+        
+        <div class="pro-container">
+            
+            <div class="pro">
+                <img src="images/product1.jpg" alt="product1" class="product-img">
+                <div>
+                    <h4 class="product-title">STAINLESS STEEL LUNCH BOX</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 750.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product2.jpg" alt="producT2" class="product-img">
+                <div>
+                    <h4 class="product-title">BPA-FREE WATER BOTTLE</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 1200.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product3.jpg" alt="product3" class="product-img">
+                <div>
+                    <h4 class="product-title">REUSABLE SILICONE BAG PACKS</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 280.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product4.jpg" alt="product4" class="product-img">
+                <div>
+                    <h4 class="product-title">BEASWAX FOOD WRAPS</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 120.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product5.jpg" alt="product5" class="product-img">
+                <div>
+                    <h4 class="product-title">ORGANIC BABY WRAP CARRIER</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 3450.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product6.jpg" alt="product6" class="product-img">
+                <div>
+                    <h4 class="product-title">SILICONE BABY FEEDING SET</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 2160.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product7.jpg" alt="product7" class="product-img">
+                <div>
+                    <h4 class="product-title">SILICONE BABY TEETHER</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 350.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product8.jpg" alt="product8" class="product-img">
+                <div>
+                    <h4 class="product-title">ORGANIC COTTON CRIB SHEETS</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 4670.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product9.jpg" alt="product9" class="product-img">
+                <div>
+                    <h4 class="product-title">HOW NOT TO DIE-A BOOK</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 1270.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product10.jpg" alt="product10" class="product-img">
+                <div>
+                    <h4 class="product-title">BURNOUT-A BOOK</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 1350.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product11.jpg" alt="product11" class="product-img">
+                <div>
+                    <h4 class="product-title">CONNECTED-A BOOK</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 1160.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product12.jpg" alt="product12" class="product-img">
+                <div>
+                    <h4 class="product-title">THE POWER OF NOW-A BOOK</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 1200.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product13.jpg" alt="product13" class="product-img">
+                <div>
+                    <h4 class="product-title">YOGA MAT</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 8900.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product14.jpg" alt="product14" class="product-img">
+                <div>
+                    <h4 class="product-title">RESISTANT BANDS SET</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 5980.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product15.jpg" alt="product15" class="product-img">
+                <div>
+                    <h4 class="product-title">DUMBBELL SET</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 49 000.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product16.jpg" alt="product16" class="product-img">
+                <div>
+                    <h4 class="product-title">EXERCISE BIKE</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 127 000.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product17.jpg" alt="product17" class="product-img">
+                <div>
+                    <h4 class="product-title">ELECTRIC THERMOMETER</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 4320.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product18.jpg" alt="product18" class="product-img">
+                <div>
+                    <h4 class="product-title">BLOOD PRESSURE MONITOR</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 12 700.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product19.jpg" alt="product19" class="product-img">
+                <div>
+                    <h4 class="product-title">BLOOD GLUCOMETER</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 27 895.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+
+            <div class="pro">
+                <img src="images/product20.jpg" alt="product20" class="product-img">
+                <div>
+                    <h4 class="product-title">FITNESS TRACKER</h4>
+                </div>
+                <div>
+                    <h4 class="price">LKR 30 200.00</h4>
+                </div>
+                <button class="addBasket">Add To Basket</button>
+            </div>
+        </div>   
+  </section>
+
+  <a href="shop.html"><img src="images/toTheTop.png" alt="toTheTop" class="to-the-top"></a>
+
+
+  <footer>
+    <div class="footer-content1">
+      <div class="footer-content2">
+        <div class="name">
+        <h3> About Us:</h3> <br>
+        <a href="pageeditor/pageeditor.html" target="_blank">Gokula Nandhan</a><br>
+        <a href="#">Thilaksha Lakshan</a><br>
+        <a href="#">Thibakar</a><br>
+        <a href="#">Thenujaa</a><br>
+        </div>
+       </div>
+       <div class="footer-content2">
+        <div class="footer-content">
+            <h3>FitGlow</h3>
+            <p>WE Love Being Healthy!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitGlow. All rights reserved.</p>
+        </div>
+       </div>
+       <div class="footer-content2">
+        <div class="footer-contentlinks">
+        <a href="https://www.globalgoals.org/terms-conditions/" >Terms & Conditions</a><br>
+        <a href="https://www.globalgoals.org/privacy-policy/" >Privacy Policy</a><br>
+        <a href="https://www.globalgoals.org/cookies/">Cookies</a><br>
+        <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a><br>
+        <a href="https://www.globalgoals.org/asset-licence/">Asset Licence</a>
+       </div>
+      </div>   
+    </div>
+  </footer>
+
+
+<script src="shop.js"></script>    
+</body>
+</html>

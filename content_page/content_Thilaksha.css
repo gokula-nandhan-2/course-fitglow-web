@@ -1,0 +1,117 @@
+main {
+    background-color: rgba(39, 144, 17, 0.9); 
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main .content-image {
+    display: block;
+    max-width: 70%; 
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+main h1, main h2 {
+    text-align: center;
+    color: #503a0b; 
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sup {
+    font-size: 20px;
+    color: #f6f3ef;
+    font-weight: bold;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #39443c;
+}
+
+main ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+main ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.important-section, .maintain-health {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.important-section .side-image, .maintain-health .side-image {
+    flex: 1;
+    max-width: 20%; 
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.important-section .important-content, .maintain-health .maintain-content {
+    flex: 2;
+}
+
+.personal-stories, .call-to-action {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.personal-stories p, .call-to-action p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Styles for call-to-action section */
+.call-to-action {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #2e9470; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action h2 {
+    font-size: 28px;
+    color: #0d47a1; 
+    margin-bottom: 15px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    color: #0d47a1; 
+}
+
+.call-to-action a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px; 
+    padding: 10px 20px;
+    background-color: #5b7a94; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.call-to-action a:hover {
+    background-color: #4e6f8b; 
+}

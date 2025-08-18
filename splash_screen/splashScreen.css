@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow: hidden;
+  width :100%;
+  height :100vh;
+ }
+
+
+.background-image{
+  position: absolute;
+  width:100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image:url("healthy.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: zoomout 4s ease-in-out infinite;
+  z-index: -1;
+  filter: brightness(0.5);
+ }
+
+
+
+ h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  animation: fade-up 0.75s ;
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+  margin-top: 0%;
+  
+}
+
+span{
+  color:#90EE90;
+}
+
+
+img{
+  width: 90px;
+  border-bottom-right-radius: 50%;
+  object-fit: cover;
+  animation: fade-down 2.0s;
+ }
+
+hr{
+  margin:40px ;
+  animation: fade-up 1.0s ;
+}
+
+ul{
+  margin-top: 2%;
+  animation: fade-up 1.0s;
+  font-weight: bold;}
+
+ ul li{
+  color:#90EE90; 
+  display: inline;
+  padding-left: 90px;
+  padding-right: 118px;
+  font-size: 19px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ h4{
+  text-align: center;
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: fade-up 0.8s;
+  font-size: 20px;
+
+ }
+
+ .box{
+  position: relative;
+  width: 750px;
+  height: 255px;
+  background: transparent;
+  box-shadow: 0 5px 15px  greenyellow;
+  background: rgba(7, 18, 4, 0.5);
+  color:#fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  animation: fade-up 1.0s;
+ }
+
+ .box h3{
+  margin-top: 0;
+  text-align: center;
+  padding-top: 4%;
+  font-size: 35px;
+  font-weight: bold;
+  color: #AFE1AF;
+  animation: fade-up 1.0s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .box p{
+  text-align: center;
+  font-size: 20px;
+  animation: fade-up 1.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+
+@keyframes zoomout{
+  0%{
+    transform: scale(1.2);
+  }
+  100%{
+   transform :scale(1);
+  }
+}
+
+@keyframes fade-down{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.loader {
+    width: 15px;
+    top: 50%;
+    left:50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    clip-path: inset(-45px);
+    box-shadow: -60px 15px,-60px 15px,-60px 15px;
+    transform: translateY(-15px);
+    animation: l19 1s infinite linear;
+    color: #90EE90;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    }
+  
+  @keyframes l19{ 
+    16.67% {box-shadow:-60px 15px,-60px 15px,19px 15px}
+    33.33% {box-shadow:-60px 15px,  0px 15px,19px 15px}
+    40%,60%{box-shadow:-19px 15px,  0px 15px,19px 15px}
+    66.67% {box-shadow:-19px 15px,  0px 15px,60px 15px}
+    83.33% {box-shadow:-19px 15px, 60px 15px,60px 15px}
+    100%   {box-shadow: 60px 15px, 60px 15px,60px 15px}
+  }

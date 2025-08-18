@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">     
+        <title>FitGlow</title>
+        <link rel="stylesheet" href="UserProfile.css">
+        <link rel="stylesheet" href="footerNav_thiba.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="FitGlow.png" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+
+    <body>
+        <!-- navigation bar -->
+        <header>
+            <h2><a href="homepage.html" class="logo"><img src="FitGlow.png" alt="FitGlow Logo" style="width: 120px; height: auto;"></a></h2>
+
+            <div class="navigation">
+                <a href="homepage.html" >Home</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="shop.html">Shop</a>
+                <a href="userProfile.html" class="active">User Profile</a>
+                <a href="feedback1.html">Feedback</a>
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="team.html">Team</a>
+            </div>
+        </header>
+
+        <div class="user-profile">
+                
+            <h1>User Profile</h1>
+
+            <!-- overlay -->
+            <div class="overlay"></div>
+
+            <!-- prompt box -->
+            <div class="prompt-container" id="prompt-box">
+                <button id="close-btn" onclick="closePrompt()">❌</button>
+                <div class="progress" id="progress-bar">
+                    <div class="progress-done">
+                        <span id="progress-text"></span>
+                    </div>
+                </div>
+                <h2 id="prompt-heading"></h2>
+                <div class="line-box">
+                    <h3 id="prompt-title"></h3>
+                    <p id="question-counter"></p>
+                </div>
+                <div class="prompt-input">
+                    <label id="prompt-label" for="prompt-input"></label><br>
+                    <input type="text" id="prompt-input"><br>
+                </div>
+                <!-- control btns -->
+                <button id="prev-step-btn" onclick="prevStep()">&laquo; Previous Step</button>
+                <button id="prev-ques-btn" onclick="prevQues()">&laquo; Previous Question</button>
+                <button id="skip-btn" onclick="skipQues()">Skip</button>
+                <button id="next-btn"  onclick="nextQues()">Next &raquo;</button>
+                <button id="submit-btn" onclick="submitDetails()">Submit</button>
+            </div>
+
+            <!-- start btn -->
+            <button class="add-button" id="add-prompt-btn" onclick="startBtn()">Start</button>
+
+            <!-- output -->
+            <div id="output-container">
+                <div id="output-1" class="output-box hidden"></div>
+                <div id="output-2" class="output-box hidden"></div>
+                <div id="output-3" class="output-box hidden"></div>
+                <div id="output-4" class="output-box hidden"></div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-content1">
+              <div class="footer-content2">
+                <div class="name">
+                <h3> About Us:</h3> <br>
+                <a href="pageeditor.html" target="_blank">Gokula Nandhan </a><br>
+                <a href="pageEditor_Thilaksha.html" target="_blank">Thilaksha Lakshan</a><br>
+                <a href="pageEditor_thiba.html" target="_blank">Thibakar</a><br>
+                <a href="pageEditor_thenu.html" target="_blank"> Thenujaa</a><br>
+                </div>
+               </div>
+               <div class="footer-content2">
+                <div class="footer-content">
+                    <h3>FitGlow</h3>
+                    <p>WE Love Being Healthy!</p>
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/theglobalgoals"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://x.com/TheGlobalGoals"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/TheGlobalGoals/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCRfuAYy7MesZmgOi1Ezy0ng"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 FitGlow. All rights reserved.</p>
+                </div>
+               </div>
+               <div class="footer-content2">
+                <div class="footer-contentlinks">
+                <a href="https://www.globalgoals.org/terms-conditions/" >Terms & Conditions</a><br>
+                <a href="https://www.globalgoals.org/privacy-policy/" >Privacy Policy</a><br>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a><br>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a><br>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset Licence</a>
+               </div>
+              </div>   
+            </div>
+          </footer>
+
+        <script src="UserProfile.js"></script>
+    </body>
+</html>
