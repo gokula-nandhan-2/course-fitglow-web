@@ -6,7 +6,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* section {
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -16,8 +16,8 @@
    
     background-size: cover;
     background-position: center;
-    background-color: rgb(177, 208, 169)  ;
-} */
+    background-color: rgb(177, 208, 169);    
+}
 
 header {
     position: sticky;
@@ -25,17 +25,15 @@ header {
     background-color: darkslategray;
     top: 0;
     width: 100%;
-    padding: 30px 80px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-radius: 4px; 
-   
+    align-items: center;    
 }
 
 header .logo img {
-    width: 100px; 
-    height: auto;
+    width: 70px !important; 
+    height: 70px !important;
     border-radius: 80px;
 }
 
@@ -71,8 +69,7 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 0rem;
-    border-radius: 2px;
-    
+    border-radius: 2px;    
 }
 
 .footer-content1 {
@@ -97,7 +94,6 @@ footer {
     color: #00ff88; 
     text-decoration: underline; 
 }
-
 
 footer .footer-content {
     display: flex;

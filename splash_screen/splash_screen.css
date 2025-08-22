@@ -16,7 +16,7 @@ body{
   height: 100vh;
   top: 0;
   left: 0;
-  background-image:url("healthy.jpeg");
+  background-image:url("../assets/images/splash_screen/healthy.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

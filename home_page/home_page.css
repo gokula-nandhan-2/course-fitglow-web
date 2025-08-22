@@ -123,19 +123,19 @@
 }
 
 .pic-1 {
-  background-image: url('spiritual_health.webp');
+  background-image: url('../assets/images/home_page/spiritual_health.webp');
 }
 
 .pic-2 {
-  background-image: url('mental_health.jpg');
+  background-image: url('../assets/images/home_page/mental_health.jpg');
 }
 
 .pic-3 {
-  background-image: url('physical_health.jpg');
+  background-image: url('../assets/images/home_page/physical_health.jpg');
 }
 
 .pic-4 {
-  background-image: url('social_health.webp');
+  background-image: url('../assets/images/home_page/social_health.webp');
 }
 
 .content_box h2 {

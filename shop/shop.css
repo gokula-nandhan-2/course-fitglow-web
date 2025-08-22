@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 
 
 body{
@@ -12,59 +15,66 @@ body{
 
 
 /*header css*/
-header{
-    position: relative;
-    width: 100%;
-    background-color: darkslategray;
-}
-
-
-.header-wrapper{
-    position: fixed;
+header {
+    position: sticky;
     z-index: 999;
+    background-color: darkslategray;
     top: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: darkslategray;
+    align-items: center;    
 }
 
 header .logo img {
-    width: 50px; 
-    height: auto;
-    border-radius: 50px;
+    width: 70px !important; 
+    height: 70px !important;
+    border-radius: 80px;
 }
 
-
-
 header .navigation a {
-    color: white;
+    color: #fff; 
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 2px 10px;
-    border-radius: 20px;
-    transition: 0.3s;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background 0.3s, color 0.3s;
 }
-
+.active {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
 
 header .navigation a:not(:last-child) {
     margin-right: 30px;
 }
 
 header .navigation a:hover {
-    background:  rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2); 
+    color: #fff;
 }
 
-header .navigation #basket-icon {
-    width: 50px; 
-    height: auto;
-    margin-left: 10px;
+
+
+/*basket icon for shop summary*/
+#basket-icon {
+  position: fixed;     
+  bottom: 100px;              
+  right: 20px;            
+  background: #28a745;    
+  color: white;           
+  font-size: 26px;        
+  padding: 15px;          
+  border-radius: 40%;     
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+  text-decoration: none;  
+  z-index: 1000;          
+  transition: background 0.3s ease;
+}
+
+#basket-icon:hover {
+  background: #218838;
 }
 
 
@@ -385,8 +395,7 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 0rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    border-radius: 2px;    
 }
 
 .footer-content1 {
@@ -409,7 +418,9 @@ footer {
 
 .footer-content2 a:hover {
     color: rgb(54, 218, 32);
+    text-decoration: underline;
 }
+
 footer .footer-content {
     display: flex;
     flex-direction: column;
