@@ -1,189 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link rel="shortcut icon" type="FitGlow-icon" href="images/FitGlow.png" >
-    <link rel="stylesheet" href="checkout.css">
-    <link rel="stylesheet" href="../assets/header_footer/header_footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="shortcut icon" type="FitGlow-icon" href="images/FitGlow.png">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="../assets/header_footer/header_footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <section>
-        <header>
-            <div class="header-wrapper">
-                <h2><a href="#" class="logo"><img src="images/FitGlow.png" alt="FitGlow Logo"></a></h2>
-                <div class="navigation">
-                    <a href="#">Home</a>
-                    <a href="#">Gallery</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="#">User Profile</a>
-                    <a href="#">Feedback</a>
-                    <a href="#">Sitemap</a>
-                    <a href="#">Team</a>
-                </div>
-            </div>
-        </header> 
-    </section>
+  <!-- Header -->
+  <header>
+      <h2><a href="#" class="logo"><img src="../assets/images/logo/fitGlow_logo_2.png" alt="FitGlow Logo"></a></h2>
+      <div class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="#">User Profile</a>
+        <a href="#">Feedback</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Team</a>
+      </div>
+  </header>
 
-    
-    <div class="container">
-        <form>
-            <div class="form-section">
-                <h3 class="title">BILLING ADDRESS</h3>
-                
-                <div class="input-box">
-                    <span>Address Line 1</span>
-                    <input type="text" name="address1" required>
-                </div>
-                        
-                <div class="input-box">
-                    <span>Address Line 2</span>
-                    <input type="text" name="address2" >
-                </div>
+  <!-- Checkout Form -->
+  <div class="container">
+    <form>
+      <!-- Billing -->
+      <div class="form-section">
+        <h3 class="title">BILLING ADDRESS</h3>
 
-                <div class="input-box">
-                    <span>Address Line 3</span>
-                    <input type="text" name="address3" >
-                </div>                  
-
-                <div class="input-box">
-                    <span>Town/City</span>
-                    <input type="text" name="town" required>
-                </div>
-
-               <div class="input-box">
-                    <span>State/Province</span>
-                    <input type="text" name="state" required>
-                </div>
-
-                <div class="flex-row">    
-                    <div class="input-box">
-                        <label>
-                        <span>Country</span>
-                            <select>
-                                <option>Choose Country</option>
-                                <option>Sri Lanka</option>
-                                <option>India</option>
-                                <option>Pakistan</option>
-                                <option>Bangladesh</option>
-                                <option>Afganistan</option>
-                                <option>Nepal</option>
-                                <option>Bhutan</option>
-                                <option>Maldives</option>
-                            </select>
-                        </label>
-                    </div>
-
-                    <div class="input-box">
-                        <span>Postal / Zip Code</span>
-                        <input type="number" name="postalCode" required>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="form-section">   
-                <h3 class="title">CONTACT DETAILS</h3>
-                        
-                <div class="input-box">
-                    <span>First Name</span>
-                    <input type="text" name="firstName" required>
-                </div>
-                        
-                <div class="input-box">
-                    <span>Surname</span>
-                    <input type="text" name="Surname" required>
-                </div>
-
-                <div class="input-box">
-                    <span>Phone Number</span>
-                    <input type="number" name="phoneNo" required>
-                </div>
-
-                <div class="input-box">
-                    <span>Email Address</span>
-                    <input type="text" name="email" required>
-                </div>
-
-                <div class="input-box">
-                    <img src="images/thankyou.jpg" alt="thankyou" class="thankyou-image">
-                </div>
-            </div>
-
-        
-            <div class="form-section">
-                <h3 class="title">PAYMENT DETAILS</h3>
-                        
-                <div class="input-box">
-                    <span>Accepted Cards</span>
-                    <img src="images/master-card-icon.png" alt="mastercard" class="image">
-                    <img src="images/visa-icon.png" alt="visacard" class="image">
-                </div>
-                                
-                <div class="input-box">
-                    <span>Card Number</span>
-                    <input type="number" name="" required>
-                </div>
-        
-                <div class="input-box">
-                    <span>Cardholder Name</span>
-                    <input type="text" name="" required>
-                </div>
-        
-                <div class="input-box">
-                    <span>CVC</span>
-                    <input type="number" name="" required>
-                </div>
-        
-                <div class="input-box">
-                    <span>Expiry Date</span>
-                    <input type="date" name="" required>
-                </div>
-                <button type="submit" class="pay-btn">PAY</button>
-            </div>                                      
-        </form>
-    </div>
-
-    <footer>
-        <div class="footer-content1">
-          <div class="footer-content2">
-            <div class="name">
-            <h3> About Us:</h3> <br>
-            <a href="#">Gokula Nandhan</a><br>
-            <a href="#">Thilaksha Lakshan</a><br>
-            <a href="#">Thibakar</a><br>
-            <a href="#">Thenujaa</a><br>
-            </div>
-           </div>
-           <div class="footer-content2">
-            <div class="footer-content">
-                <h3>FitGlow</h3>
-                <p>WE Love Being Healthy!</p>
-                <ul class="socials">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 FitGlow. All rights reserved.</p>
-            </div>
-           </div>
-           <div class="footer-content2">
-            <div class="footer-contentlinks">
-            <a href="https://www.globalgoals.org/terms-conditions/" >Terms & Conditions</a><br>
-            <a href="https://www.globalgoals.org/privacy-policy/" >Privacy Policy</a><br>
-            <a href="https://www.globalgoals.org/cookies/">Cookies</a><br>
-            <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a><br>
-            <a href="https://www.globalgoals.org/asset-licence/">Asset Licence</a>
-           </div>
-          </div>   
+        <div class="input-box">
+          <span>Address Line 1</span>
+          <input type="text" name="address1" required>
         </div>
-      </footer>
 
-    <script src="checkout.js"></script>
+        <div class="input-box">
+          <span>Address Line 2</span>
+          <input type="text" name="address2">
+        </div>
+
+        <div class="input-box">
+          <span>Address Line 3</span>
+          <input type="text" name="address3">
+        </div>
+
+        <div class="input-box">
+          <span>Town/City</span>
+          <input type="text" name="town" required>
+        </div>
+
+        <div class="input-box">
+          <span>State/Province</span>
+          <input type="text" name="state" required>
+        </div>
+
+        <div class="flex-row">
+          <div class="input-box">
+            <label>
+              <span>Country</span>
+              <select>
+                <option>Choose Country</option>
+                <option>Sri Lanka</option>
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>Bangladesh</option>
+                <option>Afganistan</option>
+                <option>Nepal</option>
+                <option>Bhutan</option>
+                <option>Maldives</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="input-box">
+            <span>Postal / Zip Code</span>
+            <input type="number" name="postalCode" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="form-section">
+        <h3 class="title">CONTACT DETAILS</h3>
+
+        <div class="input-box">
+          <span>First Name</span>
+          <input type="text" name="firstName" required>
+        </div>
+
+        <div class="input-box">
+          <span>Surname</span>
+          <input type="text" name="Surname" required>
+        </div>
+
+        <div class="input-box">
+          <span>Phone Number</span>
+          <input type="number" name="phoneNo" required>
+        </div>
+
+        <div class="input-box">
+          <span>Email Address</span>
+          <input type="text" name="email" required>
+        </div>
+
+        <div class="input-box">
+          <img src="../assets/images/shop/thankyou.jpg" alt="thankyou" class="thankyou-image">
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="form-section">
+        <h3 class="title">PAYMENT DETAILS</h3>
+
+        <div class="input-box">
+          <span>Accepted Cards</span>
+          <img src="../assets/images/shop/master-card-icon.png" alt="mastercard" class="image">
+          <img src="../assets/images/shop/visa-icon.png" alt="visacard" class="image">
+        </div>
+
+        <div class="input-box">
+          <span>Card Number</span>
+          <input type="number" required>
+        </div>
+
+        <div class="input-box">
+          <span>Cardholder Name</span>
+          <input type="text" required>
+        </div>
+
+        <div class="input-box">
+          <span>CVC</span>
+          <input type="number" required>
+        </div>
+
+        <div class="input-box">
+          <span>Expiry Date</span>
+          <input type="date" required>
+        </div>
+
+        <button type="submit" class="pay-btn">PAY</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content1">
+      <div class="footer-content2">
+        <div class="name">
+        <h3> About Us:</h3> <br>
+        <a href="../page_editor/page_editor_gokul.html">Gokula Nandhan  </a><br>
+        <a href="../page_editor/page_editor_thilaksha.html">Thilaksha Lakshan</a><br>
+        <a href="../page_editor/page_editor_thiba.html">Srisomaskanthan Thibakar</a><br>
+        <a href="../page_editor/page_editor_thenu.html">Thenujaa Suntharesan</a><br>
+        </div>
+      </div>
+      <div class="footer-content2">
+        <div class="footer-content">
+          <h3>FitGlow</h3>
+          <p>WE Love Being Healthy!</p>
+          <ul class="socials">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 FitGlow. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-content2">
+        <div class="footer-contentlinks">
+          <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a><br>
+          <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a><br>
+          <a href="https://www.globalgoals.org/cookies/">Cookies</a><br>
+          <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a><br>
+          <a href="https://www.globalgoals.org/asset-licence/">Asset Licence</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="checkout.js"></script>
 </body>
 </html>

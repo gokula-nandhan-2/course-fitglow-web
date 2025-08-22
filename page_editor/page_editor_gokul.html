@@ -4,61 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitGlow</title>
-    <link rel="stylesheet" href="pageeditor.css">
+    <link rel="stylesheet" href="page_editor.css">
+    <link rel="stylesheet" href="../assets/header_footer/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="FitGlow.png" >
 </head>
 <body>
-    <section>
-        <header>
-            <h2><a href="homepage.html" class="logo"><img src="FitGlow.png" alt="image/png" style="width: 120px; height: auto;"></a></h2>
+    <header>
+        <h2><a href="homepage.html" class="logo"><img src="../assets/images/logo/fitGlow_logo_2.png" alt="FitGlow Logo" style="width: 120px; height: auto;"></a></h2>
 
-            <div class="navigation">
-                <a href="homepage.html" class="active">Home</a>
-                <a href="Gallery.html">Gallery</a>
-                <a href="shop.html">Shop</a>
-                <a href="userProfile.html">User Profile</a>
-                <a href="feedback1.html">Feedback</a>
-                <a href="Sitemap.html">Sitemap</a>
-                <a href="team.html">Team</a>
-            </div>
-        </header>
+        <div class="navigation">
+            <a href="homepage.html" >Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="userProfile.html">User Profile</a>
+            <a href="feedback1.html">Feedback</a>
+            <a href="Sitemap.html">Sitemap</a>
+            <a href="team.html">Team</a>
+        </div>
+        
+    </header>
+    <section class="content-section">
+        <div class="content">
+            <h1>About me</h1>
+            <h2>I'm Gokul.</h2>
+            <ul>
+                <li><b>Role : Student 01</b></li>
+                <li><b>IIT ID : 20233027</b></li>
+                <li><b>UoW ID : w2082091</b></li>
+            </ul>
+            <h3>My Works</h3>
+            <ul>
+                <li>Created a splash screen to load the webpage content.</li> 
+                <li><a href="homepage.html">Splash Screen</a></li>
+                <li>Created a shop page to purchase goods for health.</li>
+                <li><a href="feedback1.html">Shop</a></li>
+                <li>Additionally, created a Social-related content page.</li>
+                <li><a href="content_Thilaksha.html">Content Page</a></li>
+            </ul>
+        </div>
 
-    
-
-        <div>
-            <img src="gokul.jpg" alt="gokul" class="image">
-            <br>
-            <h1>WELCOME!</h1>
-            <h2>Name :S.Gokula Nandhan</h2>
-            <h2>Role :Student 1</h2>
-            <hr>
-            <div class="info">
-                <p>The theme that we have selected is "Good Health and Well-Being."
-                I made our website's flash screen. and produced a checkout page as well as a shop page.</p>
-                <p>The website's components are both aesthetically pleasing and easy to use.Links as follows,</p>
-            </div>
-            <hr>
-            <div>
-                <a href="splash%20screen/splashScreen.html" class="splash-screen">SPLASH SCREEN</a>
-                <a href="shop/shop.html" class="shop">SHOP</a>
-            </div>
+        <div class="content-img">
+            <img src="../assets/images/team/gokul.jpeg" alt="EMPTY">
         </div>
     </section>
-
-        
-
-   
+    
+    <div class="icons">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="#"><i class="ri-mail-line"></i></a>
+    </div>
 
     <footer>
         <div class="footer-content1">
           <div class="footer-content2">
             <div class="name">
             <h3> About Us:</h3> <br>
-            <a href="pageeditor.html" target="_blank">Gokula Nandhan </a><br>
-            <a href="pageEditor_Thilaksha.html" target="_blank">Thilaksha Lakshan</a><br>
-            <a href="pageEditor_thiba.html" target="_blank">Thibakar</a><br>
-            <a href="pageEditor_thenu.html" target="_blank">Thenujaa</a><br>
+            <a href="../page_editor/page_editor_gokul.html">Gokula Nandhan  </a><br>
+            <a href="../page_editor/page_editor_thilaksha.html">Thilaksha Lakshan</a><br>
+            <a href="../page_editor/page_editor_thiba.html">Srisomaskanthan Thibakar</a><br>
+            <a href="../page_editor/page_editor_thenu.html">Thenujaa Suntharesan</a><br>
             </div>
            </div>
            <div class="footer-content2">
@@ -87,6 +97,20 @@
           </div>   
         </div>
       </footer>
-    
-    </body>
-    </html>
+
+    <!-- Scroll reveal link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const scrollReveal = ScrollReveal({
+            distance: '65px',
+            duration: 2600,
+            delay: 450,
+            reset: true
+        });
+
+        scrollReveal.reveal('.content', { delay: 200, origin: 'bottom' });
+        scrollReveal.reveal('.content-img', { delay: 450, origin: 'top' });
+        scrollReveal.reveal('.icons', { delay: 500, origin: 'left' });
+    </script>
+</body>
+</html>

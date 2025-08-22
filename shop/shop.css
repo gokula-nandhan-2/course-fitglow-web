@@ -60,7 +60,7 @@ header .navigation a:hover {
 /*basket icon for shop summary*/
 #basket-icon {
   position: fixed;     
-  bottom: 100px;              
+  top: 120px;              
   right: 20px;            
   background: #28a745;    
   color: white;           
@@ -81,7 +81,7 @@ header .navigation a:hover {
 
 /*starter image css*/
 .firstBackground{
-    background-image: url("images/foodScarcity.jpg");
+    background-image: url("../assets/images/shop/foodScarcity.jpg");
     height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
