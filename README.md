@@ -93,6 +93,7 @@ FitGlow/
 ![](screen_shots/splash_screen.png)
  
 - Shop Page
+
 ![](screen_shots/shop1.png)
 ![](screen_shots/shop2.png)
 ![](screen_shots/shop3.png)
